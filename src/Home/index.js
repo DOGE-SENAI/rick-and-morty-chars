@@ -45,17 +45,22 @@ const Home = () => {
     //     }
     // }
 
-    const [listChars, setListChars] = useState();
+    const [listChars, setListChars] = useState([]);
 
-    useEffect(() => {
-        api.get(`${a}`)
-            .then(response => setListChars(response.data.results))
-            .catch(err => {
-                alert("Aconteceu um erro!");
-                console.log("Erro: " + err);
-            })
+    function Pesquisar(val){
+        console.log(val);
 
-    }, []);
+        useEffect(() => {
+            api.get(`${val}`)
+                .then(response => setListChars(response.data.results))
+                .catch(err => {
+                    alert("Aconteceu um erro!");
+                    console.log("Erro: " + err);
+                })
+    
+        }, []);
+    }
+    
 
     return (
         <Estrutura>
