@@ -5,7 +5,7 @@ const Topo = () => {
     return (
         <header className="topo">
             <div className="topo-conteudo">
-                <img className="topo-logo" src="assets/logo.png" alt="titulo" title="titulo Rick and Mory"/>
+                <img className="topo-logo" src="assets/logo.png" alt="Logo" title="Logo Rick and Morty Characters"/>
             </div>
         </header>
     );
