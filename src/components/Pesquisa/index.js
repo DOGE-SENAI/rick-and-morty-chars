@@ -1,14 +1,13 @@
-import React, { useRef } from "react";
-import { TextField, Button } from "@mui/material";
+import React from "react";
+import { TextField } from "@mui/material";
+import './style.css';
 
 const Pesquisa = (props) => {
-    const inputBusca = useRef();
 
     return (
-        <div>
-            <TextField id="outlined-search" label="Pesquise um personagem" type="search"
-                className="input-pesquisa" ref={inputBusca}/>
-            <Button variant="contained" onClick={props.func}>Pesquisar</Button>
+        <div className="container-search">
+            <TextField id="outlined-search" label="Pesquise um personagem" type="search" 
+            className="input-pesquisa"/>
         </div>
     );
 }

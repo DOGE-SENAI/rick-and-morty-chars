@@ -1,18 +1,36 @@
 import React from 'react';
 
 import Card from '@mui/material/Card';
-import { CardMedia, CardContent } from '@mui/material';
+import { CardMedia } from '@mui/material';
+
+import './style.css';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const CardCustom = (props) => {
 
-    return (
-        <Card className="card">
-            <CardMedia component="img" image={props.img} alt="Foto de perfil" />
+    const theme = createTheme({
+        components: {
+            MuiCard: {
+                styleOverrides: {
+                    root: {
+                        backgroundColor:'#2F4368',
+                        color: 'white'
+                    }
+                }
+            }
+        }
+    });
 
-            <CardContent>
-                {props.children}
-            </CardContent>
-        </Card>
+    return (
+        <ThemeProvider theme={theme}>
+            <Card className="card">
+                <CardMedia className="card-img" component="img" image={props.img} alt="Foto de perfil" />
+
+                <div className="card-content">
+                    {props.children}
+                </div>
+            </Card>
+        </ThemeProvider>
     );
 }
 

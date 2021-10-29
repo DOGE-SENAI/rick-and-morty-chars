@@ -3,7 +3,7 @@ import './rodape_estilo.css';
 
 const Rodape = () => {
     return(
-        <div>
+        <div className="rodape">
             <p>By Doge © SENAI 2021</p>
         </div>
     );

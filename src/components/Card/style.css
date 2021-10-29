@@ -1,0 +1,30 @@
+.card {
+    width: 70%;
+    height: fit-content;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 1px solid rgba(53, 53, 53, 0.808);
+    border-radius: 10px;
+}
+
+.card:first-child{
+    margin-top: 70px;
+}
+
+.card .card-img {
+    width: 128px;
+    height: 128px;
+    padding: 4px;
+
+    border-radius: 10px;
+}
+
+.card .card-content {
+
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+}
