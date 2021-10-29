@@ -1,9 +1,9 @@
 // import React, { useEffect, useState } from 'react';
-// import { Typography } from '@mui/material';
 
-import Estrutura from '../../components/Estrutura';
 // import Pesquisa from '../components/Pesquisa';
 // import CardCustom from '../components/Card';
+import Estrutura from '../../components/Estrutura';
+import './style.css';
 
 // import api from '../services/api';
 
@@ -68,7 +68,11 @@ const Home = () => {
                     ))
                 }
             </div> */}
-            oi
+
+            {/*########## Apresentação Inicial do Home ##########*/}
+            <section className="container-main-banner">
+                <h1>Search for a Rick and Morty character</h1>
+            </section>
         </Estrutura>
     );
 }
