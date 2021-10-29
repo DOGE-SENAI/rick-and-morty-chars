@@ -1,0 +1,26 @@
+.container-main-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main-banner h1{
+    text-align: center;
+    font-size: 4.225rem;
+    color: rgb(32, 35, 41);
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 18px;
+}
+
+@media (max-width: 56.825em){
+    .container-main-banner h1{
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 50.800em){
+    .container-main-banner h1{
+        font-size: 2.300rem;
+    }
+}
