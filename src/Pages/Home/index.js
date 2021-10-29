@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Typography } from '@mui/material';
+// import React, { useEffect, useState } from 'react';
+// import { Typography } from '@mui/material';
 
-import Estrutura from '../components/Estrutura';
-import Pesquisa from '../components/Pesquisa';
-import CardCustom from '../components/Card';
+import Estrutura from '../../components/Estrutura';
+// import Pesquisa from '../components/Pesquisa';
+// import CardCustom from '../components/Card';
 
-import api from '../services/api';
+// import api from '../services/api';
 
 //TODO: PASSAR STRING DE PESQUISA; TERMINAR NOVA MANIPULAÇÃO DE DADOS; ARRUMAR VISUALIZAÇÃO DOS CARDS.
 
@@ -45,21 +45,21 @@ const Home = () => {
     //     }
     // }
 
-    const [listChars, setListChars] = useState();
+    // const [listChars, setListChars] = useState();
 
-    useEffect(() => {
-        api.get(`${a}`)
-            .then(response => setListChars(response.data.results))
-            .catch(err => {
-                alert("Aconteceu um erro!");
-                console.log("Erro: " + err);
-            })
+    // useEffect(() => {
+    //     api.get(`${a}`)
+    //         .then(response => setListChars(response.data.results))
+    //         .catch(err => {
+    //             alert("Aconteceu um erro!");
+    //             console.log("Erro: " + err);
+    //         })
 
-    }, []);
+    // }, []);
 
     return (
         <Estrutura>
-            <Pesquisa func={Pesquisar()} />
+            {/* <Pesquisa func={Pesquisa()} />
 
             <div className="cards-container">
                 {
@@ -67,7 +67,8 @@ const Home = () => {
                         <h5>{char.name}</h5>
                     ))
                 }
-            </div>
+            </div> */}
+            oi
         </Estrutura>
     );
 }
