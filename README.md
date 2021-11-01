@@ -4,7 +4,7 @@ Pesquise por personagens da famosa série animada [Rick and Morty](https://www.a
 
 <img src="https://img.shields.io/static/v1?label=MUI&message=v4.12&color=90caf9&style=for-the-badge&logo=MaterialUI"/> <img src="https://img.shields.io/static/v1?label=ReactJs&message=v17.0.2&color=61dafb&style=for-the-badge&logo=React"/> <img src="https://img.shields.io/static/v1?label=AXIOS&message=v0.24.0&color=blueviolet&style=for-the-badge&logo=npm"/> <img src="https://img.shields.io/static/v1?label=Windows&message=10&color=blue&style=for-the-badge&logo=Windows"/> <img src="https://img.shields.io/static/v1?label=&message=vscode&color=blue&style=for-the-badge&logo=Visual Studio Code"/>
 
-![img-readme](\img-readme.png)
+<img src="img-readme.png" style="border: 1px solid #000; box-shadow: 0 0 1em #000">
 
 ##### [🔗 Link da Aplicação](https://rickandmortychars-doge.netlify.app/)
 
