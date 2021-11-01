@@ -15,5 +15,9 @@
 .rodape p{
     font-size: 18px;
     font-weight: 600;
+}
 
+.rodape a{
+    text-decoration: underline;
+    color: #8BFC12;
 }
